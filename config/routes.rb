@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  get "sessions/new"
-
   scope "(:locale)", locale: /en|vi/ do
     root "users#new"
     get "/signup", to: "users#new"
