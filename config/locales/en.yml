@@ -46,3 +46,18 @@ en:
       remember_me: Remember me on this computer
     create:
       invalid_email_pass: Invalid email/password combination
+  categories:
+    action:
+      category_not_found: Category not found
+    form:
+      name: Name
+    new:
+      title: Add category
+      button_create: Add category
+    edit:
+      title: Update category
+      save_change: Save change category
+    create:
+      add_category_success: Add category success
+    update:
+      category_updated: Category updated 
