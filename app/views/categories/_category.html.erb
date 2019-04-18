@@ -1,0 +1,8 @@
+<li>
+  <%= link_to category.name, category %>
+  <% if current_user.role == Settings.app.user.admin %>
+    | <%= link_to t(".edit"), edit_category_path(category) %>
+    | <%= link_to t(".delete"), category, method: :delete,
+        data: { confirm: t(".you_sure") } %>
+  <% end %>
+</li>

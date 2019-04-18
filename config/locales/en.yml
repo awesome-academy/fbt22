@@ -60,4 +60,13 @@ en:
     create:
       add_category_success: Add category success
     update:
-      category_updated: Category updated 
+      category_updated: Category updated
+    index:
+      title: Categories
+    category:
+      delete: delete
+      edit: edit
+      you_sure: You sure?
+    destroy:
+      category_deleted: Category deleted
+      category_delete_error: Category delete error
