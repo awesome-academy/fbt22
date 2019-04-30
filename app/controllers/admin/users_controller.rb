@@ -1,6 +1,6 @@
 class Admin::UsersController < ApplicationController
   before_action :admin_user
-  before_action :load_user, except: :index
+  before_action :load_user, only: :destroy
 
   def index
     @users = User.sort_by_created_at_desc.paginate page: params[:page],
