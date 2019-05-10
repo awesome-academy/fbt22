@@ -18,7 +18,7 @@ class Admin::BookingsController < ApplicationController
     respond_to do |format|
       format.js
     end
-  rescue
+  rescue StandardError
     flash[:danger] = t ".change_status_error"
     redirect_to request.referrer
   end

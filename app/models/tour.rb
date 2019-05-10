@@ -25,6 +25,8 @@ class Tour < ApplicationRecord
 
   def average_review
     reviews.sum("rating") / reviews.count
+  rescue ZeroDivisionError
+    0
   end
 
   private
