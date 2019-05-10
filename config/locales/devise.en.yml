@@ -3,6 +3,8 @@
 en:
   devise:
     confirmations:
+      new:
+        title: Resend confirmation instructions
       confirmed: "Your email address has been successfully confirmed."
       send_instructions: "You will receive an email with instructions for how to confirm your email address in a few minutes."
       send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes."
@@ -26,17 +28,63 @@ en:
       email_changed:
         subject: "Email Changed"
       password_change:
+        you_confirm: "You can confirm your account email through the link below:"
+        welcome: Welcome
+        confirm: Confirm
+        subject: "Confirmation instructions"
+      reset_password_instructions:
+        hello: Hello
+        change: Change my password
+        ignore: If you didn't request this, please ignore this email.
+        access: Your password won't change until you access the link above and create a new one.
+        message: Someone has requested a link to change your password. You can do this through the link below.
+        subject: "Reset password instructions"
+      unlock_instructions:
+        message: Your account has been locked due to an excessive number of unsuccessful sign in attempts.
+        click_link: "Click the link below to unlock your account:"
+        hello: Hello
+        unlock: Unlock my account
+        subject: "Unlock instructions"
+      email_changed:
+        hello: Hello
+        message: We're contacting you to notify you that your email is being changed to
+        subject: "Email Changed"
+      password_change:
+        message: We're contacting you to notify you that your password has been changed.
+        hello: Hello
         subject: "Password Changed"
     omniauth_callbacks:
       failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
       success: "Successfully authenticated from %{kind} account."
     passwords:
+      edit:
+        title: Change your password
+        new_pass: New password
+        chage_pass: Change my password
+        confirm_pass: Confirm new password
+      new:
+        title: Forgot your password?
+        send_reset_pass: Send me reset password instructions
       no_token: "You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided."
       send_instructions: "You will receive an email with instructions on how to reset your password in a few minutes."
       send_paranoid_instructions: "If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes."
       updated: "Your password has been changed successfully. You are now signed in."
       updated_not_active: "Your password has been changed successfully."
     registrations:
+      edit:
+        edit: Edit
+        char_minimum: characters minimum
+        update: Update
+        unhappy: Unhappy
+        back: Back
+        your_sure: Are you sure?
+        cancel_account: Cancel my account
+        confirm_change: we need your current password to confirm your changes
+        leave_blank: leave blank if you don't want to change it
+        wating_confirm: Currently waiting confirmation for
+      new:
+        title: Sign up
+        char_minimum: characters minimum
       destroyed: "Bye! Your account has been successfully cancelled. We hope to see you again soon."
       signed_up: "Welcome! You have signed up successfully."
       signed_up_but_inactive: "You have signed up successfully. However, we could not sign you in because your account is not yet activated."
@@ -53,6 +101,19 @@ en:
       send_instructions: "You will receive an email with instructions for how to unlock your account in a few minutes."
       send_paranoid_instructions: "If your account exists, you will receive an email with instructions for how to unlock it in a few minutes."
       unlocked: "Your account has been unlocked successfully. Please sign in to continue."
+      new:
+        title: Log in
+      signed_in: "Signed in successfully."
+      signed_out: "Signed out successfully."
+      already_signed_out: "Signed out successfully."
+    shared:
+      links:
+        login: Log in
+        sign_up: Sign up
+        forgot_pass: Forgot your password?
+        sign_in_with: Sign in with
+        not_unlock: Didn't receive unlock instructions?
+        not_confirm: Didn't receive confirmation instructions?
   errors:
     messages:
       already_confirmed: "was already confirmed, please try signing in"

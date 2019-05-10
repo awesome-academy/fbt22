@@ -170,3 +170,9 @@ footer{
 .home_bg{
   background-image: url("bghome.jpg");
 }
+
+.field_with_errors {
+  input {
+    border-color: red;
+  }
+}

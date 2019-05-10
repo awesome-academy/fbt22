@@ -246,6 +246,7 @@ en:
         one: "1 review"
         other: "%{count} reviews"
     show:
+      not_booking: You must login to booking
       danger: "Content not exist"
       title: "Tour details"
       signup: "Sign up"
