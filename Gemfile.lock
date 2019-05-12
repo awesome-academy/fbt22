@@ -52,6 +52,7 @@ GEM
       sassc-rails (>= 2.0.0)
     builder (3.2.3)
     byebug (9.0.6)
+    cancancan (2.3.0)
     carrierwave (1.2.2)
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
@@ -477,6 +478,7 @@ DEPENDENCIES
   bcrypt (= 3.1.12)
   bootstrap
   byebug (= 9.0.6)
+  cancancan (~> 2.0)
   carrierwave (= 1.2.2)
   coffee-rails (= 4.2.2)
   config
