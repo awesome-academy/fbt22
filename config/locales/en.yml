@@ -230,6 +230,12 @@ en:
       submit: "Update"
   tours:
     index:
+      title_or_description: Title or description
+      from_date: From date
+      to_date: To date
+      price_greater_than: Price greater than
+      price_less_than: Price less than
+      search: "Search"
       title: "List Tours"
       signup: "Sign up"
       brand: "Sun Booking"

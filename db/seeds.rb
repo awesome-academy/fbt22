@@ -45,12 +45,12 @@ Travelling.create!(location_start_id: 1, location_end_id: 2)
 
 30.times do |n|
   title  = Faker::Name.title
-  description = Faker::Lorem.paragraphs(2..8)
+  description = Faker::Lorem.sentence(40)
   price = "299"
   image = Faker::LoremPixel.image("255x267")
   num_people = Random.rand(10)
   tour_start = Date.today
-  tour_finish =  Date.parse("2019-05-02")
+  tour_finish =  Date.parse("2019-06-02")
   status = 0
   category_id = 1
   travelling_id = 1
@@ -89,7 +89,7 @@ end
   type_review = Random.rand(0..2)
   rating = Random.rand(1..5)
   content = Faker::Lorem.sentence(10)
-  user_id = Random.rand(1..31)
+  user_id = Random.rand(1..30)
   tour_id = Random.rand(1..30)
   type_review = Random.rand(0..2)
   Review.create!(rating: rating,

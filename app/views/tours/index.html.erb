@@ -12,9 +12,28 @@
     <div class="col-lg-11"></div>
     <div class="col-lg-12">
       <!-- Offers Grid -->
-      <%= form_tag tours_path, :method => "get" do %>
-      <%= text_field_tag :search, @search_term, class: "form-control"%>
-      <%= submit_tag "Search", :title => nil %>
+      <%= search_form_for @q, html: {class: "row"} do |f|%>
+        <div class="col-sm-12">
+          <%= f.search_field :title_or_description_cont, class: "form-control",
+            placeholder: t(".title_or_description") %>
+        </div>
+        <div class="col-sm-6">
+          <%= f.label t(".from_date") %>
+          <%= f.search_field :tour_start_gt, class: "form-control", type: "date" %>
+        </div>
+        <div class="col-sm-6">
+          <%= f.label t(".to_date") %>
+          <%= f.search_field :tour_finish_lt, class: "form-control", type: "date" %>
+        </div>
+        <div class="col-sm-6">
+          <%= f.search_field :price_gt, class: "form-control", placeholder: t(".price_greater_than") %>
+        </div>
+        <div class="col-sm-6">
+          <%= f.search_field :price_lt, class: "form-control", placeholder: t(".price_less_than") %>
+        </div>
+        <div class="col-sm-12">
+          <%= f.submit t(".search"), class: "btn btn-primary" %>
+        </div>
       <% end %>
       <div class="offers_grid">
         <!-- Offers Item -->
