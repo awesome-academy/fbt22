@@ -1,4 +1,5 @@
 app:
+  zero: 0
   user:
     first_name_max_length: 20
     last_name_max_length: 10
