@@ -27,7 +27,7 @@
             <%= link_to t(".like"), review_likes_path(review), method: :post,
               class: "float-left btn text-white btn-info ml-2" %>
           <% end %>
-          <% if current_user?(review.user) %>
+          <% if can? :show, review %>
             <%= link_to t(".delete"), review_path(review),
               method: :delete, data: { confirm: t(".sure") }, class: "float-right
               btn text-white btn-danger ml-2" %>
