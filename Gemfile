@@ -10,7 +10,7 @@ gem "i18n-js"
 gem "jbuilder", "2.7.0"
 gem "jquery-rails"
 gem "mini_magick", "4.7.0"
-gem "puma", "3.9.1"
+gem "puma", "3.12.4"
 gem "rails", "5.1.6"
 gem "rails-i18n"
 gem "rubocop", "~> 0.54.0", require: false
